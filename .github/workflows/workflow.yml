@@ -9,6 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+<<<<<<< HEAD
     container: python:3.9-slim
     steps:
       - name: Checkout
@@ -26,3 +27,6 @@ jobs:
 
       - name: Run unit tests with nose
         run: nosetests -v --with-spec --spec-color --with-coverage --cover-package=app
+=======
+    container: python:3.9-slim
+>>>>>>> c1e4a85e505267e076f2fbf3d8dcb913741cd25a
